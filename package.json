@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+   "proxy": "https://course-api.com",
   "scripts": {
     "test": "jest --no-color 2>output.txt",
     "start": "webpack-dev-server --mode development --watch --open --hot",
     "build": "webpack --mode production"
+    
+
   },
   "keywords": [],
   "author": "",
