@@ -15,11 +15,11 @@ const Tour = (props) => {
             <li>
                 <h2>{name}</h2>
                 <img src={image}></img>
-                <p>{show?info:`${info.substr(0,200)}...`}
+                <p id={`tour-item-para-${id}`}>{show?info:`${info.substr(0,200)}...`}
                     <button onClick={()=>setShow(!show)}>{!show ?"Show more":"See less"}</button>
                 </p>
                 <h4>{price}</h4>
-                <button onClick={()=>handleDelete(id)}>Remove</button>
+                <button id={`delete-btn-${id}`} onClick={()=>handleDelete(id)}>Remove</button>
             </li>
           
      }
