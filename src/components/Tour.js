@@ -16,7 +16,7 @@ const Tour = (props) => {
                 <h2>{name}</h2>
                 <img src={image}></img>
                 <p id={`tour-item-para-${id}`}>{show?info:`${info.substr(0,200)}...`}
-                    <button id={`see-more-${id}`} onClick={()=>setShow(!show)}>{!show ?"See more":"See less"}</button>
+                    <button id={`see-more-${id}`} onClick={()=>setShow(!show)}>{!show ?"See more":"Show less"}</button>
                 </p>
                 <h4>{price}</h4>
                 <button id={`delete-btn-${id}`} onClick={()=>handleDelete(id)}>Remove</button>
